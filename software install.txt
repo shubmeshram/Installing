@@ -1,0 +1,25 @@
+
+INSTALL NODEJS
+# curl -sL http://rpm.nodesource.com/setup_14.x | sudo  -E bash -
+# yum install nodejs
+
+
+
+INSTALL MYSQL
+# yum install -y mysql
+# mysql -h <hostname>  -u <username> -p <password>
+
+
+
+INSTALL DYNAMODB
+# vi etc/yum.repos.d/mongodb-org-3.0.repo
+
+               [mongodb-org-3.0]
+               name=MongoDB Repository
+               baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-    org/3.0/x86_64/
+               gpgcheck=0
+               enabled=1
+
+# yum install –y mongodb-org
+# service mongod start
+# mongo
